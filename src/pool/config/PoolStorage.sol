@@ -2,9 +2,9 @@
 
 pragma solidity 0.8.26;
 
-import {ILevelOracle} from "../interfaces/ILevelOracle.sol";
-import {ILPToken} from "../interfaces/ILPToken.sol";
-import {IPoolHook} from "../interfaces/IPoolHook.sol";
+import {ILevelOracle} from "../../interfaces/ILevelOracle.sol";
+import {ILPToken} from "../../interfaces/ILPToken.sol";
+import {IPoolHook} from "../../interfaces/IPoolHook.sol";
 
 // common precision for fee, tax, interest rate, maintenace margin ratio
 uint256 constant PRECISION = 1e10;

@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.26;
 
-import {Side} from "../interfaces/IPool.sol";
+import {Side} from "../../interfaces/IPool.sol";
 
 library PoolErrors {
     error UpdateCauseLiquidation();

@@ -2,7 +2,7 @@
 
 pragma solidity 0.8.26;
 
-import {PoolStorage, AssetInfo, PoolTokenInfo, Position, MAX_TRANCHES} from "src/pool/PoolStorage.sol";
+import {PoolStorage, AssetInfo, PoolTokenInfo, Position, MAX_TRANCHES} from "src/pool/config/PoolStorage.sol";
 import {Side, IPool} from "../interfaces/IPool.sol";
 import {SignedIntOps} from "../lib/SignedInt.sol";
 import {PositionUtils} from "../lib/PositionUtils.sol";

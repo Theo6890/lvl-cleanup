@@ -6,10 +6,10 @@ import {IERC20} from "openzeppelin/interfaces/IERC20.sol";
 import {SafeERC20} from "openzeppelin/token/ERC20/utils/SafeERC20.sol";
 
 import {OwnableUpgradeable} from "openzeppelin-upgradeable/access/OwnableUpgradeable.sol";
-import {IPool, Side, TokenWeight} from "../interfaces/IPool.sol";
+import {IPool, Side, TokenWeight} from "../../interfaces/IPool.sol";
 import {PoolErrors} from "./PoolErrors.sol";
-import {IPoolHook} from "../interfaces/IPoolHook.sol";
-import {ILevelOracle} from "../interfaces/ILevelOracle.sol";
+import {IPoolHook} from "../../interfaces/IPoolHook.sol";
+import {ILevelOracle} from "../../interfaces/ILevelOracle.sol";
 
 import {
     PoolStorage,

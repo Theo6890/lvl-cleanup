@@ -7,12 +7,12 @@ import {SafeERC20} from "openzeppelin/token/ERC20/utils/SafeERC20.sol";
 import {IERC20Metadata} from "openzeppelin/interfaces/IERC20Metadata.sol";
 import {IERC20} from "openzeppelin/interfaces/IERC20.sol";
 import {Initializable} from "openzeppelin-upgradeable/proxy/utils/Initializable.sol";
-import {SignedIntOps} from "../lib/SignedInt.sol";
-import {MathUtils} from "../lib/MathUtils.sol";
-import {PositionUtils} from "../lib/PositionUtils.sol";
-import {ILevelOracle} from "../interfaces/ILevelOracle.sol";
-import {ILPToken} from "../interfaces/ILPToken.sol";
-import {IPool, Side, TokenWeight} from "../interfaces/IPool.sol";
+import {SignedIntOps} from "../../lib/SignedInt.sol";
+import {MathUtils} from "../../lib/MathUtils.sol";
+import {PositionUtils} from "../../lib/PositionUtils.sol";
+import {ILevelOracle} from "../../interfaces/ILevelOracle.sol";
+import {ILPToken} from "../../interfaces/ILPToken.sol";
+import {IPool, Side, TokenWeight} from "../../interfaces/IPool.sol";
 
 import {PoolAdmin} from "./PoolAdmin.sol";
 import {
@@ -31,7 +31,7 @@ import {
     MAX_MAINTENANCE_MARGIN
 } from "./PoolStorage.sol";
 import {PoolErrors} from "./PoolErrors.sol";
-import {IPoolHook} from "../interfaces/IPoolHook.sol";
+import {IPoolHook} from "../../interfaces/IPoolHook.sol";
 import {SafeCast} from "openzeppelin/utils/math/SafeCast.sol";
 
 contract Pool is Initializable, ReentrancyGuardUpgradeable, PoolAdmin, IPool {
